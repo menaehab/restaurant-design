@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --main-color: #d4a762;
+  --secondary-color: #d4a7623f;
+  --bg-color: #fffcf8;
+}
+
+.navbar {
+  padding: 20px 0;
+  background-color: var(--bg-color) !important;
+}
+
+header {
+  z-index: 999 !important;
+}
+
+header .navbar-brand .second,
+header .navbar-brand .first {
+  font-size: 2em;
+  font-family: "Playball", cursive;
+}
+
+header .navbar-brand .first {
+  color: var(--main-color) !important;
+  font-weight: bold;
+}
+
+header .navbar-brand {
+  font-weight: 800;
+}
+
+header form input,
+header form button {
+  display: none !important;
+}
+
+header .navbar-toggler {
+  color: var(--main-color) !important;
+}
+
+.custom-search {
+  border-color: var(--main-color) !important;
+  color: var(--main-color) !important;
+}
+
+.custom-search::placeholder {
+  color: var(--main-color) !important;
+}
+
+.custom-search:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 0.2rem rgba(212, 167, 98, 0.25);
+}
+
+.custom-search-btn {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: white;
+}
+
+.custom-search-btn:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+header .active {
+  color: var(--main-color) !important;
+}
+
+.navbar-nav.centered-nav .nav-item {
+  color: #777 !important;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.navbar-nav.centered-nav .nav-item:hover .nav-link {
+  color: #d4a762;
+  transition: 0.5s !important;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  color: black;
+  border: none;
+  border-radius: 18px;
+  padding: 7px 30px;
+  font-weight: 600;
+  transition: 0.5s ease;
+  margin: 0 20px;
+}
+
+.btn-primary:hover {
+  background-color: #000;
+  color: var(--main-color);
+}
+
+.btn-primary:focus {
+  background-color: #000 !important;
+  color: var(--main-color) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #000;
+  color: var(--main-color);
+  border-color: #000;
+}
+
+@media (max-width: 991px) {
+  header .icon {
+    display: none;
+  }
+
+  header form input,
+  header form button {
+    display: block !important;
+  }
+
+  header .btn-primary {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav.centered-nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .navbar-toggler {
+    margin-right: auto;
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+  }
+
+  .navbar-brand {
+    margin-left: 30px !important;
+  }
+
+  .navbar-nav.centered-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .icon {
+    background-color: var(--main-color);
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s ease;
+  }
+
+  .icon:hover {
+    color: var(--main-color);
+    background-color: #000;
+  }
+
+  .icon i {
+    color: #000;
+    font-size: 1em;
+  }
+}
+
+.hero {
+  background-color: var(--bg-color);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.hero img {
+  width: 90%;
+  max-width: 500px;
+}
+
+.text-label {
+  font-size: 0.8em;
+  border: var(--main-color) 1px solid !important;
+  background-color: var(--bg-color) !important;
+}
+
+.hero .text-hero,
+.hero .text-hero span {
+  font-family: "Playball", cursive;
+}
+
+.hero .text-hero span {
+  color: var(--main-color);
+}
+
+.hero .text-hero {
+  font-size: 5em;
+  line-height: 1.2em;
+}
+
+.hero .btn-primary {
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.button-group {
+  display: flex;
+  gap: 5px;
+  justify-content: left;
+}
+
+@media (max-width: 991px) {
+  .hero .box {
+    text-align: center;
+  }
+
+  .hero .button-group {
+    justify-content: center;
+    margin-bottom: 5em;
+  }
+}
+
+.section-title {
+  font-size: 1em;
+  border: var(--main-color) 1px solid !important;
+  background-color: var(--bg-color) !important;
+}
+
+.section-description {
+  margin-bottom: 100px;
+  font-family: "Playball", cursive;
+  font-size: 2.5em;
+}
+
+.stats {
+  margin-top: 50px;
+  padding: 50px 0;
+  min-height: 70vh;
+}
+
+.stats .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.stats .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stats .box {
+  background-color: var(--main-color);
+  padding: 1.5em;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  transition: 0.5s;
+}
+
+.stats .box:hover {
+  transform: translateY(-10px);
+}
+
+.stats i {
+  font-size: 4em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.stats .counter {
+  font-family: "Playball", cursive;
+  font-size: 3.5em;
+}
+
+.stats h5 {
+  font-size: 1em;
+}
+
+.stats img {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 991px) {
+  .stats .box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .stats img {
+    display: none;
+  }
+}
+
+.blog {
+  background-color: var(--bg-color);
+  padding-top: 50px;
+}
+
+.blog .titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  gap: 3.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.card-article {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  min-width: 328px;
+}
+
+.card-img {
+  width: 370px;
+  border-radius: 1.5em;
+}
+
+.card-data {
+  width: 280px;
+  background-color: var(--main-color);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  border-radius: 1em;
+  position: absolute;
+  bottom: -11em;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.card-description {
+  display: block;
+  margin-bottom: 0.25em;
+  font-size: 1em;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 0.75em;
+}
+
+.card-button {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000;
+}
+
+.card-button:hover {
+  text-decoration: underline;
+}
+
+.card-article:hover .card-data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card-article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card-article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card-article:not(:hover) .card-data {
+  animation: remove-data 1s forwards;
+}
+
+@keyframes show-data {
+  50% {
+    transform: translateY(-12em);
+  }
+
+  100% {
+    transform: translateY(-8em);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-8em);
+  }
+
+  50% {
+    transform: translateY(-12em);
+  }
+
+  100% {
+    transform: translateY(1em);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+
+  50% {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  .card-container {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .card-article {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .card-data {
+    width: 90%;
+  }
+}
+
+footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .title span,
+footer .title {
+  font-family: "Playball", cursive;
+  font-size: 36px;
+  color: #000;
+}
+
+footer .title span {
+  color: var(--main-color);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  line-height: 1.5;
+  background-color: var(--bg-color);
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 25px;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  font-weight: 600;
+}
+
+footer p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+footer .icons {
+  color: var(--main-color);
+  margin-right: 8px;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--main-color);
+  height: 2px;
+  width: 50px;
+  box-sizing: border-box;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #777;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: var(--main-color);
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: var(--main-color);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: var(--main-color);
+  background-color: #000;
+}
+
+footer .footer-gallery img {
+  width: 90px;
+  border: 1px var(--main-color) solid;
+  margin: 3px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.footer-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+@media (max-width: 991px) {
+  .footer-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.end {
+  background-color: #000;
+  padding: 10px 0;
+  color: white;
+}
+
+.end span {
+  color: var(--main-color);
+}
+
+.end-color {
+  background-color: #000;
+}
+
+/* Top Scroll arrow */
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.btn.btn-primary:hover {
+  background: #050709 !important;
+  color: #d4a762 !important;
+}
+
+.btn-md-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  width: 44px;
+  height: 44px;
+}
+
+.btn-primary {
+  color: #000;
+  background-color: #d4a762;
+  border-color: #d4a762;
+}
